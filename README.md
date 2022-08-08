@@ -32,7 +32,7 @@ Once compiled, the library `libft.a` is generated in the repository folder. You 
 #include "libft.h"
 ```
 
-To compile libft complete with your project, use the flag `-L. -lft`. The header file `libft.h` is located in `include/` and must be given to compiler with the flag -I. Example:
+To compile libft complete with your project, use the flag `-L. -lft`. The header file `libft.h` is located in `include/` and must be given to compiler with the flag `-I`. Example:
 
 	$> gcc myproject.c -I include/ -L. -lft
 
