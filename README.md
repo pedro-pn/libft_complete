@@ -26,13 +26,13 @@ Make supports the following rules:
 
 ### Use
 
-Once compiled, the library `libft.a` is generated in the repository folder. You need to include the header in your project to be able to use libft functions:
+Once compiled, the library `libft.a` is generated in the repository folder. You need to include the header `libft.h` in your project to be able to use libft functions:
 
 ```c
 #include "libft.h"
 ```
 
-To compile libft complete with your project, use the flag the flag -L. The header file `libft.h` is located in `include/` and can be given to compiler with the flag -I. Example:
+To compile libft complete with your project, use the flag `-L. -lft`. The header file `libft.h` is located in `include/` and must be given to compiler with the flag -I. Example:
 
 	$> gcc myproject.c -I include/ -L. -lft
 
