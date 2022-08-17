@@ -36,7 +36,7 @@ ${OBJS_PATH}/%.o:	${SRCS_PATH}/%.c
 
 ${NAME}: ${OBJS}
 		@ ar -rcs ${NAME} ${OBJS}
-		@ echo "${L_GREEN}Libft Successfully compiled!${NC}"
+		@ echo "${L_GREEN}Libft successfully compiled!${NC}"
 
 clean: 
 		@ rm -rf ${OBJS_PATH}
