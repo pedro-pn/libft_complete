@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 22:30:27 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2022/08/06 23:34:29 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/01/27 13:14:31 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,10 @@
  * @param fd The file descriptor on which to write.*/
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	index;
+	size_t	size;
 
-	index = 0;
 	if (!s)
 		return ;
-	while (s[index])
-	{
-		ft_putchar_fd(s[index], fd);
-		index++;
-	}
+	size = ft_strlen(s);
+	write(fd, s, size);
 }
