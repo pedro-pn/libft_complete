@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 17:56:06 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2022/08/07 00:04:02 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/02/07 13:40:24 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	if (*lst != 0)
 	{	
-		(*del)((*lst)-> content);
+		if (del != NULL)
+			(*del)((*lst)->content);
 		ft_lstclear(&((*lst)-> next), (*del));
 		free(*lst);
 	}
