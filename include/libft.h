@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 04:02:09 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2023/02/13 10:30:26 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/06/11 11:19:53 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ double	ft_atof(const char *str);
 void	ft_putdouble_fd(double n, int fd, int res);
 char	*ft_strcpy_end(char *dest, char *src);
 void	ft_swap_double(double *a, double *b);
+void	ft_clean_array(void **array, void (*del)(void *));
 
 // ft_printf
 
