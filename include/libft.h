@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 04:02:09 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2023/06/11 11:19:53 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/06/16 11:30:44 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstdelnode(t_list **lst, void *content, void (*del)(void *));
 void	ft_lstremove(t_list **lst, void *content);
 char	*get_next_line(int fd);
+void	ft_clean_gnl(int fd);
 char	*ft_strrpl(const char *str, int old, int new);
 void	*ft_memrpl(char *s, int old, int new, size_t n);
 double	ft_atof(const char *str);
