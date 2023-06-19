@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 10:57:38 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2023/06/11 11:19:52 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/06/19 12:02:31 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 void	ft_clean_array(void **array, void (*del)(void *))
 {
-	int i;
+	int	i;
 
 	if (array == NULL)
 		return ;
