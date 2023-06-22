@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 04:02:09 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2023/06/19 12:36:56 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/06/21 22:34:26 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ char	*ft_strcpy_end(char *dest, char *src);
 void	ft_swap_double(double *a, double *b);
 void	ft_clean_array(void **array, void (*del)(void *));
 void	*ft_realloc(void *ptr, size_t ptr_size, size_t size);
+int		ft_arradd_int(int **array, int n, size_t size);
 
 // ft_printf
 
