@@ -6,7 +6,7 @@
 /*   By: ppaulo-d <ppaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/19 11:44:07 by ppaulo-d          #+#    #+#             */
-/*   Updated: 2023/06/19 12:36:25 by ppaulo-d         ###   ########.fr       */
+/*   Updated: 2023/06/21 22:13:33 by ppaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	*ft_realloc(void *ptr, size_t ptr_size, size_t size)
 	void	*new_ptr;
 
 	new_ptr = malloc(size);
+	if (new_ptr == NULL)
+		return (NULL);
 	if (ptr == NULL)
 		return (new_ptr);
 	ft_memcpy(new_ptr, ptr, ptr_size);
